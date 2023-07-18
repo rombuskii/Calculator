@@ -198,30 +198,44 @@ export class App extends React.Component {
   render() {
     console.log(this.state.exp)
     return (
-      <div id="calculator">
-        <div id="d-frame">
+      <div>
+        <div className='sticky top-0 left-0 flex bg-red-500 text-white justify-between p-2'>
+          <h1 className='text-xl'>Rom's Calculator</h1>
+        </div>
+      <main className='w-screen items-center justify-center bg-gradient-to-br from-red-500 via-purple-500 to-pink-400 min-h-screen flex flex-col'>
+      <div className='w-10/12 lg:w-6/12 font-extrabold justify-center border-2 border-black rounded-xl p-5 flex flex-col gap-y-6 bg-gray-900 text-white' id="calculator">
+        <div className='w-full bg-gray-300 p-3 rounded-lg text-black font-extrabold' id="d-frame">
         <p id="display">{this.state.exp} </p>
           </div>
-        <div id="frame">
-      <button id="clear" class="btn" onClick={() => this.handleChange("AC")}>AC</button>
-      <button class="btn" id="decimal" onClick={() => this.handleChange(".")}>.</button>
-      <button class="btn" id="zero" onClick={() => this.handleChange("0")}>0</button>
-      <button class="btn" id="one" onClick={() => this.handleChange("1")}>1</button>
-      <button class="btn" id="two" onClick={() => this.handleChange("2")}>2</button>
-      <button class="btn" id="three" onClick={() => this.handleChange("3")}>3</button>
-      <button class="btn" id="four" onClick={() => this.handleChange("4")}>4</button>
-      <button class="btn" id="five" onClick={() => this.handleChange("5")}>5</button>
-      <button class="btn" id="six" onClick={() => this.handleChange("6")}>6</button>
-      <button class="btn" id="seven" onClick={() => this.handleChange("7")}>7</button>
-      <button class="btn" id="eight" onClick={() => this.handleChange("8")}>8</button>
-      <button class="btn" id="nine" onClick={() => this.handleChange("9")}>9</button>
-      <button class="btn" id="add" onClick={() => this.handleChange("+")}>+</button>
-      <button class="btn" id="subtract" onClick={() => this.handleChange("-")}>-</button>
-      <button class="btn" id="multiply" onClick={() => this.handleChange("*")}>*</button>
-      <button class="btn" id="divide" onClick={() => this.handleChange("/")}>/</button>
-      <button class="btn" id="equals" onClick={() => this.handleChange("=")}>=</button>
+          <div className='flex items-center justify-between'>
+      <button id="clear " class="duration-300 hover:scale-90 btn p-2  lg:p-7 border-2 bg-red-500 rounded-lg" onClick={() => this.handleChange("AC")}>AC</button>
+      <button class="btn p-2 duration-300 hover:scale-90 mr-4 lg:p-7 border-2 bg-amber-500 rounded-lg" id="decimal" onClick={() => this.handleChange(".")}>.</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="zero" onClick={() => this.handleChange("0")}>0</button>
+      </div>
+      <div className='flex items-center justify-between'>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="one" onClick={() => this.handleChange("1")}>1</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="two" onClick={() => this.handleChange("2")}>2</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="three" onClick={() => this.handleChange("3")}>3</button>
+      </div>
+      <div className='flex items-center justify-between'>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="four" onClick={() => this.handleChange("4")}>4</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="five" onClick={() => this.handleChange("5")}>5</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="six" onClick={() => this.handleChange("6")}>6</button>
+      </div>
+      <div className='flex items-center justify-between'>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="seven" onClick={() => this.handleChange("7")}>7</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="eight" onClick={() => this.handleChange("8")}>8</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="nine" onClick={() => this.handleChange("9")}>9</button>
+      </div>
+      <div className='flex items-center justify-between'>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="add" onClick={() => this.handleChange("+")}>+</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="subtract" onClick={() => this.handleChange("-")}>-</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="multiply" onClick={() => this.handleChange("*")}>*</button>
+      <button class="btn p-2 duration-300 hover:scale-90 lg:p-7 border-2 bg-amber-500 rounded-lg" id="divide" onClick={() => this.handleChange("/")}>/</button>
+      </div>
+      <button class="btn p-3 duration-300 hover:scale-90 border-2 bg-red-500 rounded-lg" id="equals" onClick={() => this.handleChange("=")}>=</button>
         </div>
-
+        </main>
         </div>
     )
   }

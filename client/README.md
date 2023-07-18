@@ -16,4 +16,4 @@
 - Enter the root directory and run npm run start.
 - Visit [http://localhost:3000](http://localhost:3000)
 
-This project was created using React/Javascript && Tailwind .
+This project was created using React/Javascript & Tailwind .

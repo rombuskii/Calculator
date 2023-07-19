@@ -204,8 +204,8 @@ export class App extends React.Component {
         </div>
       <main className='w-screen items-center justify-center bg-gradient-to-br from-red-500 via-purple-500 to-pink-400 min-h-screen flex flex-col'>
       <div className='w-10/12 lg:w-6/12 font-extrabold justify-center border-2 border-black rounded-xl p-5 flex flex-col gap-y-6 bg-gray-900 text-white' id="calculator">
-        <div className='w-full bg-gray-300 p-3 rounded-lg text-black font-extrabold' id="d-frame">
-        <p id="display">{this.state.exp} </p>
+        <div className='bg-gray-300 p-3 rounded-lg text-black font-extrabold' id="d-frame">
+        <p className='break-all' id="display">{this.state.exp} </p>
           </div>
           <div className='flex items-center justify-between'>
       <button id="clear" class="duration-300 hover:scale-90 btn p-2 md:p-4  lg:p-7 border-2 bg-red-500 rounded-lg" onClick={() => this.handleChange("AC")}>AC</button>

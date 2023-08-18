@@ -199,9 +199,6 @@ export class App extends React.Component {
     console.log(this.state.exp)
     return (
       <div>
-        <div className='w-full flex bg-red-500 text-white justify-between p-2'>
-          <h1 className='text-xl'>Rom's Calculator</h1>
-        </div>
       <main className='w-screen items-center justify-center bg-gradient-to-br from-red-500 via-purple-500 to-pink-400 min-h-screen flex flex-col'>
       <div className='w-10/12 lg:w-6/12 font-extrabold justify-center border-2 border-black rounded-xl p-5 flex flex-col gap-y-6 bg-gray-900 text-white' id="calculator">
         <div className='bg-gray-300 p-3 rounded-lg text-black font-extrabold' id="d-frame">
